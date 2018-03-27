@@ -1,10 +1,10 @@
 # Feel free to disable non-critical HA parts during devel by commenting lines out
 # Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
 
-Description: Pattern with packages for mido configurations
-Name: jolla-configuration-mido
+Description: Pattern with packages for vince configurations
+Name: jolla-configuration-vince
 Requires:
-- pattern:jolla-hw-adaptation-mido
+- pattern:jolla-hw-adaptation-vince
 - pattern:jolla-sailfish-applications
 - pattern:jolla-ui-wayland
 # For devices with cellular modem. Those without one, please comment out:
@@ -32,5 +32,5 @@ Requires:
 # Required for Jolla Store Access
 - patterns-sailfish-consumer-generic
 
-Summary: Jolla Configuration mido
+Summary: Jolla Configuration vince
 

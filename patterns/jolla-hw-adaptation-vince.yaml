@@ -1,20 +1,20 @@
 # Feel free to disable non-critical HA parts during devel by commenting lines out
 # Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
 
-Description: Pattern with packages for mido HW Adaptation
-Name: jolla-hw-adaptation-mido
+Description: Pattern with packages for vince HW Adaptation
+Name: jolla-hw-adaptation-vince
 Requires:
-- droid-hal-mido
-- droid-hal-mido-img-boot
-- droid-hal-mido-kernel-modules
-- droid-config-mido-sailfish
-- droid-config-mido-pulseaudio-settings
-- droid-config-mido-policy-settings
-- droid-config-mido-preinit-plugin
-- droid-config-mido-flashing
-- droid-config-mido-bluez5
-- droid-hal-version-mido
-- droid-hal-mido-detritus
+- droid-hal-vince
+- droid-hal-vince-img-boot
+- droid-hal-vince-kernel-modules
+- droid-config-vince-sailfish
+- droid-config-vince-pulseaudio-settings
+- droid-config-vince-policy-settings
+- droid-config-vince-preinit-plugin
+- droid-config-vince-flashing
+- droid-config-vince-bluez5
+- droid-hal-version-vince
+- droid-hal-vince-detritus
 
 #Audiofligher glue
 - pulseaudio-modules-droid-glue
@@ -91,5 +91,5 @@ Requires:
 - camera-settings-plugin
 - sd-utils
 
-Summary: Jolla HW Adaptation mido
+Summary: Jolla HW Adaptation vince
 
