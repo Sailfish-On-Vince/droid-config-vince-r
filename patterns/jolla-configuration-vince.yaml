@@ -32,5 +32,15 @@ Requires:
 # Required for Jolla Store Access
 - patterns-sailfish-consumer-generic
 
+# some apps useful
+- sailfish-office
+- jolla-calculator
+- jolla-email
+- jolla-notes
+- jolla-clock
+- jolla-mediaplayer
+- jolla-calendar
+- sailfish-weather
+
 Summary: Jolla Configuration vince
 
