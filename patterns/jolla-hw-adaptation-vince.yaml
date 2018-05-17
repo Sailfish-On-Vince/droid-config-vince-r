@@ -15,7 +15,6 @@ Requires:
 - droid-config-vince-bluez5
 - droid-hal-version-vince
 - droid-hal-vince-detritus
-- droid-lib-vince
 
 #Audiofligher glue
 - pulseaudio-modules-droid-glue
