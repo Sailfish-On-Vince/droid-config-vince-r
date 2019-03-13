@@ -1,0 +1,1 @@
+KERNEL=="card0", SUBSYSTEM=="sound", ATTR{id}=="msm8953sndcardm", ENV{PULSE_IGNORE}="1"
