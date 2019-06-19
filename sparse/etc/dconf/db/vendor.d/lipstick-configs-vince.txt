@@ -1,0 +1,4 @@
+[lipstick/screen/primary]
+physicalDotsPerInch=403
+width=1080
+height=2160
