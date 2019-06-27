@@ -25,7 +25,7 @@ Requires:
 - libhybris-libwayland-egl
 
 # Bluetooth
-- bluebinder
+# - bluebinder
 
 # Telephony
 - ofono-ril-binder-plugin
