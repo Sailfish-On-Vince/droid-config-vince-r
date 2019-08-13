@@ -92,7 +92,6 @@ Requires:
 - jolla-settings-system-flashlight
 
 # Additional packages
-- camera-settings-plugin
 - sd-utils
 
 Summary: Jolla HW Adaptation vince

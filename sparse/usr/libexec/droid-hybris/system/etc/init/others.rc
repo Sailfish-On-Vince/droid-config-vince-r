@@ -1,15 +1,1 @@
-service qseecomd /vendor/bin/qseecomd_HYBRIS_DISABLED
-   class core
-   user root
-   group root
-
-service qcamerasvr /system/vendor/bin/mm-qcamera-daemon_HYBRIS_DISABLED
-    class late_start
-    user camera
-    group camera system inet input graphics
-
 service time_daemon /system/vendor/bin/time_daemon_HYBRIS_DISABLED
-    class late_start
-    user root
-    group root
-
