@@ -16,8 +16,6 @@ Requires:
 - droid-hal-version-vince
 - droid-hal-vince-detritus
 
-#Audiofligher glue
-- pulseaudio-modules-droid-glue
 
 # Hybris packages
 - libhybris-libEGL
@@ -25,7 +23,7 @@ Requires:
 - libhybris-libwayland-egl
 
 # Bluetooth
-# - bluebinder
+- bluebinder
 
 # Telephony
 - ofono-ril-binder-plugin
@@ -41,6 +39,8 @@ Requires:
 - qt5-plugin-generic-evdev
 
 - pulseaudio-modules-droid
+- pulseaudio-modules-droid-glue
+
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
@@ -92,7 +92,7 @@ Requires:
 - jolla-settings-system-flashlight
 
 # Additional packages
-- sd-utils
+#- sd-utils
 
 Summary: Jolla HW Adaptation vince
 
