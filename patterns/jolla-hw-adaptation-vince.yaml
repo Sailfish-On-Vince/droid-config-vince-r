@@ -92,7 +92,7 @@ Requires:
 - jolla-settings-system-flashlight
 
 # Additional packages
-#- sd-utils
+- sd-utils
 
 Summary: Jolla HW Adaptation vince
 
