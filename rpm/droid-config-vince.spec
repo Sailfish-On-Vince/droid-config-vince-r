@@ -20,7 +20,7 @@ Obsoletes: ofono-configs-mer
 Obsoletes: qt5-qpa-surfaceflinger-plugin
 
 # Community HW adaptations need this
-%define community_adaptation 1
+#%define community_adaptation 1
 
 # For bluez5
 %define ofono_enable_plugins bluez5,hfp_ag_bluez5
