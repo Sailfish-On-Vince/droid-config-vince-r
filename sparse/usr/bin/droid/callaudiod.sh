@@ -20,13 +20,13 @@ dbus-monitor interface="org.nemomobile.voicecall.VoiceCallManager" | while read 
     # string "earpiece"
     
     if echo $line | grep "earpiece" > /dev/null; then
-        # For this device, voicemode1 seems to be nothing other than low frequency noises
+        # For this device, voicemode2 seems to be nothing other than low frequency noises
         # and the sound of.. keypads. So both earpiece and speaker uses the same mode.
         log "Switching audio output to earpiece..."
         pactl set-card-profile droid_card.primary voicecall-voicemmode1
     elif echo $line | grep "ihf" > /dev/null; then
-        # Call switched to loudspeaker => set voicemode2
+        # Call switched to loudspeaker => set voicemode1
         log "Switching audio output to loudspeaker..."
-        pactl set-card-profile droid_card.primary voicecall-voicemmode2
+        pactl set-card-profile droid_card.primary voicecall-voicemmode1
     fi
 done
