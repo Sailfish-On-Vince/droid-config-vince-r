@@ -7,6 +7,8 @@ if [ ! -z "$bt_mac" ] ; then
 else
   if [ -f /data/misc/bluedroid/bt_config.conf ];then
     bt_mac=$(cat /data/misc/bluedroid/bt_config.conf | grep Address|awk -F' = ' '{print $2}')
-    echo $bt_mac > /var/lib/bluetooth/board-address
+    if [ ! -z "$bt_mac" ] ; then
+        echo $bt_mac > /var/lib/bluetooth/board-address
+    fi
   fi
 fi
