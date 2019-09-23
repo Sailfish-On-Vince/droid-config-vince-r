@@ -18,7 +18,6 @@ Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 
 Obsoletes: qt5-qpa-surfaceflinger-plugin
-Obsoletes: pulseaudio-modules-droid-glue
 
 # Community HW adaptations need this
 %define community_adaptation 1
