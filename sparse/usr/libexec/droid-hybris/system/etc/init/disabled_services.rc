@@ -25,3 +25,5 @@ service wificond /system/bin/wificond_HYBRIS_DISABLED
 service storaged /system/bin/storaged_HYBRIS_DISABLED
 
 service surfaceflinger surfaceflinger_HYBRIS_DISABLED
+
+service keymaster-3-0 android.hardware.keymaster@3.0-service_HYBRIS_DISABLED
