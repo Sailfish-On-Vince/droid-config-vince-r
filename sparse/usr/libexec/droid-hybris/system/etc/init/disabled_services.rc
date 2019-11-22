@@ -10,7 +10,7 @@ service cameraserver cameraserver_HYBRIS_DISABLED
 service installd installd_HYBRIS_DISABLED
     disabled
     override
-service keymaster-3-0 keymaster_HYBRIS_DISABLED
+service vendor.keymaster-3-0 keymaster_HYBRIS_DISABLED
     disabled
     override
 service keystore keystore_HYBRIS_DISABLED
