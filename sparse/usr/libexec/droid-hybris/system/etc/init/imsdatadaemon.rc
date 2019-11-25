@@ -1,0 +1,9 @@
+service vendor.imsdatadaemon imsdatadaemon_HYBRIS_DISABLED
+    disabled
+    override
+service vendor.imsrcsservice imsrcsservice_HYBRIS_DISABLED
+    disabled
+    override
+service vendor.ims_rtp_daemon ims_rtp_daemon_HYBRIS_DISABLED
+    disabled
+    override
