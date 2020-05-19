@@ -3,7 +3,8 @@
 %define device vince
 %define vendor xiaomi
 %define vendor_pretty Xiaomi
-%define device_pretty Redmi 5 Plus (vince)
+%define device_pretty Redmi 5 Plus
+%define rpm_device vince
 %define dcd_path ./
 # Adjust this for your device
 %define pixel_ratio 1.5
