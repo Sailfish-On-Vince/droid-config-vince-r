@@ -1,14 +1,14 @@
-#!/bin/sh
+#!/bin/bash
+echo "droid-get-bt-address: Setting up bluetooth address"
 
-bt_mac=$(/vendor/bin/hci_qcomm_init -e -p 2 -P 2 -d /dev/ttyHSL0 2>1 | grep -oE '([0-9a-f]{2}:){5}([0-9a-f]{2})')
-if [ ! -z "$bt_mac" ] ; then
-     echo $bt_mac > /var/lib/bluetooth/board-address
-     echo "BT MAC: $bt_mac"
-else
-  if [ -f /data/misc/bluedroid/bt_config.conf ];then
-    bt_mac=$(cat /data/misc/bluedroid/bt_config.conf | grep Address|awk -F' = ' '{print $2}')
-    if [ ! -z "$bt_mac" ] ; then
-        echo $bt_mac > /var/lib/bluetooth/board-address
-    fi
-  fi
+hexchars="0123456789ABCDEF"
+addresspath="/var/lib/bluetooth/"
+addressfile="$addresspath/board-address"
+mac=$( for i in {1..10} ; do echo -n ${hexchars:$(( $RANDOM % 16 )):1} ; done | sed -e 's/\(..\)/:\1/g' )
+
+if [ ! -f "$addressfile" ]; then
+    echo "File not found, generating new address"
+    mkdir -p "$addresspath"
+    chmod 0755 "$addresspath"
+    echo 00$mac > "$addressfile"
 fi
