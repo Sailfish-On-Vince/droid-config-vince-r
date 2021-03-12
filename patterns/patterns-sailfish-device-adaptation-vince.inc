@@ -26,7 +26,7 @@ Requires: bluebinder
 Requires: ofono-ril-binder-plugin
 
 # Sensors
-Requires: hybris-libsensorfw-qt5
+Requires: hybris-libsensorfw-qt5-binder
 
 # Vibra
 Requires: ngfd-plugin-native-vibrator
