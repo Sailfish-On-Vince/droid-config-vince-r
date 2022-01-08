@@ -4,7 +4,7 @@ Before=vendor-bt_firmware.mount vendor-dsp.mount vendor-firmware_mnt.mount local
 
 [Mount]
 What=/dev/mmcblk0p24
-Where=/vendor
+Where=/system
 Type=ext4
 TimeoutSec=5
 
