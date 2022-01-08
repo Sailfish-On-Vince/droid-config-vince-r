@@ -1,6 +1,7 @@
 [Unit]
 Description=Droid mount for /system/etc/ld.config.txt
 Before=local-fs.target
+After=system.mount
 
 [Mount]
 What=/usr/libexec/droid-hybris/system/etc/ld.config.28.txt

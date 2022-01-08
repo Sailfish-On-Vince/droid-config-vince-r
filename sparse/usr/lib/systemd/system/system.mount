@@ -1,0 +1,12 @@
+[Unit]
+Description=Droid mount for /system
+Before=vendor-bt_firmware.mount vendor-dsp.mount vendor-firmware_mnt.mount local-fs.target systemd-modules-load.service
+
+[Mount]
+What=/dev/mmcblk0p24
+Where=/vendor
+Type=ext4
+TimeoutSec=5
+
+[Install]
+WantedBy=local-fs.target
