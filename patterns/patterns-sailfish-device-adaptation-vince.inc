@@ -11,7 +11,6 @@ Requires: droid-config-vince-flashing
 Requires: droid-config-vince-bluez5
 Requires: droid-hal-version-vince
 Requires: droid-hal-vince-detritus
-Requires: droid-biometry-fp
 
 
 # Hybris packages
@@ -72,9 +71,7 @@ Requires: usb-moded-connection-sharing-android-config
 Requires: rfkill
 
 # enable device lock and allow to select untrusted software
-#Requires: jolla-devicelock-daemon-encsfa
-Requires: sailfish-fpd-community 
-Requires: sailfish-devicelock-fpd
+Requires: jolla-devicelock-daemon-encsfa
 
 # For GPS
 Requires: geoclue-provider-hybris
