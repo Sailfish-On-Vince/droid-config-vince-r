@@ -87,7 +87,7 @@ Requires: jolla-settings-system-flashlight
 Requires: sd-utils
 
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
-#Requires: sailfish-connman-plugin-suspend
+Requires: sailfish-connman-plugin-suspend
 
 # For data
 Requires: dummy_netd
